@@ -54,23 +54,11 @@ $SITE_PRODUCTS = [
     'id'          => 'torrado-e-moido',
     'name'        => 'Café Xavier — Torrado e Moído',
     'badge'       => 'Produto Oficial',
-    'image'       => 'assets/img/produtos/Gemini_Generated_Image_indqelindqelindq-removebg-preview.png',
+    'image'       => 'assets/img/produtos/embalagem-moido-foto.png',
     'description' => 'Grãos selecionados e torra de qualidade, trazendo o verdadeiro sabor tradicional de Minas Gerais para a sua xícara.',
     'info'        => 'Torrado e Moído | Embalagem Pouch de Alta Proteção',
     'is_official' => true,
   ]
-  /* 
-  // TODO: Adicionar novos produtos da marca conforme confirmação oficial
-  [
-    'id'          => 'novo-produto-id',
-    'name'        => 'Café Xavier — [Nome do Produto]',
-    'badge'       => '[Selo do Produto]',
-    'image'       => 'assets/img/produtos/embalagem-placeholder.svg',
-    'description' => '[Descrição oficial fornecida]',
-    'info'        => '[Especificação técnica]',
-    'is_official' => false,
-  ]
-  */
 ];
 
 /**
@@ -81,7 +69,7 @@ $SITE_PRODUCTS = [
 $SITE_GALLERY = [
   [
     'id'           => 'insta-1',
-    'image'        => 'assets/img/galeria/insta 1.jpeg',
+    'image'        => 'assets/img/galeria/insta-1.jpeg',
     'alt'          => 'Xícara de Café Xavier com crema perfeito e logo da marca',
     'tag'          => 'Tradição & Afeto',
     'link'         => INSTAGRAM_URL,
@@ -89,7 +77,7 @@ $SITE_GALLERY = [
   ],
   [
     'id'           => 'insta-2',
-    'image'        => 'assets/img/galeria/insta 2.jpeg',
+    'image'        => 'assets/img/galeria/insta-2.jpeg',
     'alt'          => 'Equipe e comunidade Café Xavier em feira e eventos locais',
     'tag'          => 'Comunidade & Gente',
     'link'         => INSTAGRAM_URL,
@@ -97,7 +85,7 @@ $SITE_GALLERY = [
   ],
   [
     'id'           => 'insta-3',
-    'image'        => 'assets/img/galeria/Gemini_Generated_Image_h6osoch6osoch6os.jpeg',
+    'image'        => 'assets/img/galeria/insta-3.jpeg',
     'alt'          => 'Ramo com frutos maduros de café na lavoura',
     'tag'          => 'Origem & Lavoura',
     'link'         => INSTAGRAM_URL,
@@ -105,7 +93,7 @@ $SITE_GALLERY = [
   ],
   [
     'id'           => 'insta-4',
-    'image'        => 'assets/img/galeria/Gemini_Generated_Image_3o7kzv3o7kzv3o7k.jpeg',
+    'image'        => 'assets/img/galeria/insta-4.jpeg',
     'alt'          => 'Embalagem oficial do Café Xavier',
     'tag'          => 'Produto Oficial',
     'link'         => INSTAGRAM_URL,
@@ -113,7 +101,7 @@ $SITE_GALLERY = [
   ],
   [
     'id'           => 'insta-5',
-    'image'        => 'assets/img/galeria/Gemini_Generated_Image_m1twadm1twadm1tw.jpeg',
+    'image'        => 'assets/img/galeria/insta-5.jpeg',
     'alt'          => 'Linha de cafés e degustação Café Xavier',
     'tag'          => 'Sabor & Qualidade',
     'link'         => INSTAGRAM_URL,
@@ -121,7 +109,7 @@ $SITE_GALLERY = [
   ],
   [
     'id'           => 'insta-6',
-    'image'        => 'assets/img/galeria/Gemini_Generated_Image_g5j65eg5j65eg5j6.jpeg',
+    'image'        => 'assets/img/galeria/insta-6.jpeg',
     'alt'          => 'Preparo de café fresco coado na hora com grãos selecionados',
     'tag'          => 'Ritual do Café',
     'link'         => INSTAGRAM_URL,
