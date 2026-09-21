@@ -69,6 +69,106 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // 3. NAVEGAÇÃO ATIVA & SCROLLSPY (HOMEPAGE & ÂNCORAS)
+  const navLinks = document.querySelectorAll('.nav-menu .nav-link');
+  const sectionNossoCafe = document.getElementById('nosso-cafe');
+  const sectionGaleria = document.getElementById('galeria');
+  const linkInicio = document.querySelector('.nav-menu .nav-link[href="index.php"], .nav-menu .nav-link[href="/"]');
+  const linkCafe = document.querySelector('.nav-menu .nav-link[href*="#nosso-cafe"]');
+  const linkGaleria = document.querySelector('.nav-menu .nav-link[href*="#galeria"]');
+
+  const setActiveNavLink = (activeLink) => {
+    if (!activeLink) return;
+    navLinks.forEach(link => link.classList.remove('active'));
+    activeLink.classList.add('active');
+  };
+
+  let isClickScrolling = false;
+  let clickScrollTimeout = null;
+
+  // Interação de clique suave e ativação visual imediata
+  navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+      if (href && href.includes('#')) {
+        const hash = href.substring(href.indexOf('#'));
+        const targetElement = document.querySelector(hash);
+
+        if (targetElement) {
+          setActiveNavLink(link);
+          isClickScrolling = true;
+          clearTimeout(clickScrollTimeout);
+          clickScrollTimeout = setTimeout(() => {
+            isClickScrolling = false;
+          }, 900);
+        }
+      } else if (href === 'index.php' || href === '/' || href === './') {
+        const isHomePage = window.location.pathname.endsWith('index.php') || 
+                           window.location.pathname === '/' || 
+                           window.location.pathname === '' ||
+                           window.location.pathname.endsWith('/Café Xavier v2/') ||
+                           window.location.pathname.endsWith('/Caf%C3%A9%20Xavier%20v2/');
+
+        if (isHomePage && window.scrollY > 20) {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          setActiveNavLink(link);
+          if (window.location.hash) {
+            history.replaceState(null, '', window.location.pathname);
+          }
+          isClickScrolling = true;
+          clearTimeout(clickScrollTimeout);
+          clickScrollTimeout = setTimeout(() => {
+            isClickScrolling = false;
+          }, 900);
+        }
+      }
+    });
+  });
+
+  // ScrollSpy ativo na homepage (para destacar "Início", "O Café" e "Galeria")
+  if (sectionNossoCafe || sectionGaleria) {
+    const updateScrollSpy = () => {
+      if (isClickScrolling) return;
+
+      const scrollY = window.scrollY;
+      const headerHeight = header ? header.offsetHeight : 74;
+      const offsetMargin = headerHeight + 140;
+
+      const cafeTop = sectionNossoCafe ? sectionNossoCafe.offsetTop - offsetMargin : Infinity;
+      const galeriaTop = sectionGaleria ? sectionGaleria.offsetTop - offsetMargin : Infinity;
+
+      if (scrollY < cafeTop) {
+        if (linkInicio) setActiveNavLink(linkInicio);
+      } else if (scrollY >= cafeTop && scrollY < galeriaTop) {
+        if (linkCafe) setActiveNavLink(linkCafe);
+      } else if (scrollY >= galeriaTop) {
+        if (linkGaleria) setActiveNavLink(linkGaleria);
+      }
+    };
+
+    window.addEventListener('scroll', () => {
+      window.requestAnimationFrame(updateScrollSpy);
+    }, { passive: true });
+
+    // Verificação inicial baseada na âncora presente na URL (ex: #nosso-cafe ou #galeria)
+    const checkHashOnLoad = () => {
+      const hash = window.location.hash;
+      if (hash === '#nosso-cafe' && linkCafe) {
+        setActiveNavLink(linkCafe);
+      } else if (hash === '#galeria' && linkGaleria) {
+        setActiveNavLink(linkGaleria);
+      } else if (!hash && linkInicio) {
+        if (window.scrollY < 200) {
+          setActiveNavLink(linkInicio);
+        }
+      }
+    };
+
+    checkHashOnLoad();
+    window.addEventListener('hashchange', checkHashOnLoad);
+  }
+
   // 3. REFINAMENTO UX/UI - SCROLL REVEAL SUAVE & RESPEITO À ACESSIBILIDADE
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 

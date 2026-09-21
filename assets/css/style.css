@@ -139,6 +139,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .section {
   padding: var(--section-padding-desktop);
   position: relative;
+  scroll-margin-top: 80px;
+}
+
+section[id] {
+  scroll-margin-top: 80px;
 }
 
 .badge-kicker, .section-label {
