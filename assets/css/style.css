@@ -1045,7 +1045,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .nossa-historia-section {
   position: relative;
   padding: 140px 0;
-  background: url('../img/historia/taiobeiras-praça.jpeg') no-repeat center center / cover;
+  background: url('../img/historia/taiobeiras-praca.jpeg') no-repeat center center / cover;
   color: var(--color-white);
   overflow: hidden;
 }
