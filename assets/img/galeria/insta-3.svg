@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <!-- Fundo da Lavoura de Café -->
+  <rect width="400" height="400" fill="#2E4A22"/>
+  
+  <!-- Ramos e Folhas -->
+  <g fill="#4F7A3D" stroke="#1D3315" stroke-width="2">
+    <!-- Galho principal -->
+    <path d="M 50,350 Q 200,200 350,80" fill="none" stroke="#5A3A1F" stroke-width="12" stroke-linecap="round"/>
+    
+    <!-- Folhas grandes -->
+    <path d="M 120,280 Q 70,200 130,160 Q 180,240 120,280 Z"/>
+    <path d="M 220,180 Q 290,120 320,190 Q 240,240 220,180 Z"/>
+    <path d="M 180,220 Q 130,120 220,100 Q 250,180 180,220 Z"/>
+    <path d="M 280,110 Q 360,60 350,140 Q 280,160 280,110 Z"/>
+  </g>
+
+  <!-- Frutos de Café Maduros (Cerejas Vermelho Vivo) -->
+  <g fill="#B53A32" stroke="#6E1C17" stroke-width="1.5">
+    <circle cx="160" cy="240" r="15"/>
+    <circle cx="180" cy="230" r="14"/>
+    <circle cx="170" cy="255" r="16"/>
+    <circle cx="150" cy="260" r="13"/>
+
+    <circle cx="240" cy="160" r="15"/>
+    <circle cx="260" cy="150" r="14"/>
+    <circle cx="250" cy="175" r="16"/>
+
+    <circle cx="295" cy="105" r="13"/>
+    <circle cx="310" cy="120" r="14"/>
+  </g>
+  <!-- Brilho nas cerejas -->
+  <g fill="#FFFDF9" opacity="0.6">
+    <circle cx="155" cy="235" r="3"/>
+    <circle cx="175" cy="225" r="3"/>
+    <circle cx="165" cy="250" r="4"/>
+    <circle cx="235" cy="155" r="3"/>
+  </g>
+</svg>

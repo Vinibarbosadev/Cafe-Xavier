@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <!-- Fundo Artesanal -->
+  <rect width="400" height="400" fill="#F4EBDD"/>
+  <rect x="20" y="20" width="360" height="360" rx="12" fill="#D7B98A" opacity="0.3"/>
+  
+  <!-- Pacote Pouch Centralizado -->
+  <g transform="translate(100, 40) scale(0.65)">
+    <!-- Corpo da Embalagem -->
+    <path d="M 50,40 L 250,40 C 265,40 270,55 265,70 L 250,380 C 248,395 235,405 210,405 L 90,405 C 65,405 52,395 50,380 L 35,70 C 30,55 35,40 50,40 Z" fill="#F9F4EB" stroke="#D7B98A" stroke-width="2"/>
+    
+    <g transform="translate(150, 240) scale(0.8)">
+      <circle cx="0" cy="0" r="110" fill="#FFFDF9" stroke="#5A2F1B" stroke-width="5" />
+      <text x="0" y="-40" font-family="'Playfair Display', serif" font-weight="800" font-size="28" fill="#5A2F1B" text-anchor="middle">CAFÉ</text>
+      <text x="0" y="10" font-family="'Playfair Display', serif" font-weight="900" font-size="40" fill="#5A2F1B" text-anchor="middle">Xavier</text>
+      <rect x="-85" y="70" width="170" height="26" rx="13" fill="#5A2F1B"/>
+      <text x="0" y="87" font-family="'Inter', sans-serif" font-weight="700" font-size="11" fill="#FFFDF9" text-anchor="middle">TRADIÇÃO</text>
+    </g>
+  </g>
+</svg>

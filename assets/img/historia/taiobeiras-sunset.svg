@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sunset-sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3D1D13"/>
+      <stop offset="35%" stop-color="#8C442A"/>
+      <stop offset="65%" stop-color="#D77A42"/>
+      <stop offset="85%" stop-color="#EAA662"/>
+      <stop offset="100%" stop-color="#F4D39A"/>
+    </linearGradient>
+    <linearGradient id="sun-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5E0" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#EAA662" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Céu Pôr do Sol -->
+  <rect width="1200" height="600" fill="url(#sunset-sky)"/>
+
+  <!-- Sol / Brilho -->
+  <circle cx="780" cy="340" r="140" fill="url(#sun-glow)"/>
+  <circle cx="780" cy="340" r="45" fill="#FFFDF9" opacity="0.85"/>
+
+  <!-- Nuvens leves -->
+  <path d="M 100,180 Q 250,160 400,190 T 700,170 T 1100,200" fill="none" stroke="#FFAE73" stroke-width="12" opacity="0.3"/>
+  <path d="M 50,120 Q 200,100 450,130 T 900,110" fill="none" stroke="#FF8E4D" stroke-width="8" opacity="0.25"/>
+
+  <!-- Silhueta de Taiobeiras (Montanhas ao Fundo) -->
+  <path d="M 0,420 Q 200,380 400,410 T 800,390 T 1200,430 L 1200,600 L 0,600 Z" fill="#4A2619" opacity="0.85"/>
+  <path d="M 0,460 Q 300,430 600,450 T 1200,440 L 1200,600 L 0,600 Z" fill="#2E160E"/>
+
+  <!-- Arquitetura / Igreja Matriz de Taiobeiras (Silhueta) -->
+  <g fill="#1F0D07" transform="translate(680, 260)">
+    <!-- Torre da Igreja -->
+    <path d="M 70,200 L 90,70 L 100,20 L 110,70 L 130,200 Z"/>
+    <!-- Cruz da Torre -->
+    <rect x="98" y="0" width="4" height="24"/>
+    <rect x="92" y="6" width="16" height="4"/>
+    <!-- Corpo Principal da Igreja -->
+    <rect x="30" y="140" width="140" height="70"/>
+    <polygon points="30,140 100,100 170,140"/>
+    <!-- Detalhes de Telhado e Casas do entorno -->
+    <path d="M -150,200 L -120,170 L -90,200 L -50,175 L -10,200 L 210,200 L 240,180 L 280,200 L 340,175 L 390,200 Z"/>
+  </g>
+
+  <!-- Casario e Vegetação Frontal -->
+  <path d="M 0,510 L 120,490 L 220,510 L 350,480 L 480,515 L 620,495 L 750,510 L 900,485 L 1050,510 L 1200,490 L 1200,600 L 0,600 Z" fill="#140704"/>
+</svg>

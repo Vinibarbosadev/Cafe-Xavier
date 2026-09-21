@@ -1,0 +1,16 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.log
+Nova pasta/
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# Agent documentation (optional)
+# .agents/

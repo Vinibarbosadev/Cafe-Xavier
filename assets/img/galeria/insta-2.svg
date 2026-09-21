@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <!-- Fundo do Evento / Feira -->
+  <rect width="400" height="400" fill="#E2D0B5"/>
+  <rect y="250" width="400" height="150" fill="#9C7E57"/>
+  
+  <!-- Tenda / Guarda-Sol do Café Xavier -->
+  <path d="M 50,140 L 350,140 L 200,60 Z" fill="#F4EBDD" stroke="#5A2F1B" stroke-width="4"/>
+  <path d="M 110,140 L 200,60 L 290,140" fill="#5A2F1B"/>
+  <rect x="195" y="140" width="10" height="150" fill="#5A2F1B"/>
+
+  <!-- Faixa do Stand -->
+  <rect x="100" y="170" width="200" height="45" rx="6" fill="#FFFDF9" stroke="#5A2F1B" stroke-width="2"/>
+  <text x="200" y="198" font-family="'Playfair Display', serif" font-weight="900" font-size="18" fill="#5A2F1B" text-anchor="middle">CAFÉ XAVIER</text>
+
+  <!-- Pessoas / Equipe Silhuetas Amigáveis -->
+  <!-- Pessoa 1 -->
+  <circle cx="130" cy="240" r="16" fill="#3D1D13"/>
+  <path d="M 105,290 C 105,260 155,260 155,290 Z" fill="#4F7A3D"/>
+  
+  <!-- Pessoa 2 (Centro) -->
+  <circle cx="200" cy="235" r="18" fill="#3D1D13"/>
+  <path d="M 170,290 C 170,255 230,255 230,290 Z" fill="#5A2F1B"/>
+
+  <!-- Pessoa 3 -->
+  <circle cx="270" cy="240" r="16" fill="#3D1D13"/>
+  <path d="M 245,290 C 245,260 295,260 295,290 Z" fill="#B53A32"/>
+</svg>
